@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+/* ===== Design Tokens — Forgee ===== */
+@theme {
+  --color-lime: #CCFF33;
+  --color-lime-light: #e0ff66;
+  --color-bg: #0a0a0a;
+  --color-bg-secondary: #111111;
+  --color-bg-card: #161616;
+  --color-border-card: #2a2a2a;
+  --font-display: 'Barlow Condensed', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* ===== Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* ===== Text Selection Color ===== */
+::selection {
+  background-color: #CCFF33;
+  color: #0a0a0a;
+}
+::-moz-selection {
+  background-color: #CCFF33;
+  color: #0a0a0a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ===== Font shortcut ===== */
+.font-display {
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* ===== Ticker Animation ===== */
+@keyframes ticker-scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
