@@ -64,7 +64,7 @@ const PLANS = [
 export default function Pricing() {
   return (
     <section id="precos" className="py-24 text-center">
-      <ScrollReveal className="max-w-[1200px] mx-auto px-10">
+      <ScrollReveal className="max-w-[1200px] mx-auto px-4 md:px-10">
         <SectionLabel>PLANOS</SectionLabel>
         <h2 className="font-display font-black uppercase text-white leading-[1.05] mb-5"
             style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}>
@@ -74,18 +74,18 @@ export default function Pricing() {
           Sem taxa de setup. Sem contrato anual obrigatório. Cancele quando quiser.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 text-left items-stretch">
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 -mx-6 px-6 md:grid md:grid-cols-3 md:overflow-visible md:mx-0 md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none] text-left items-stretch">
           {PLANS.map((plan) => (
             <div
               key={plan.id}
-              className={`flex flex-col h-full rounded-xl p-9 transition-all duration-200 hover:-translate-y-1
+              className={`flex-shrink-0 snap-start w-[80vw] md:w-auto flex flex-col h-full rounded-xl p-9 transition-all duration-200 hover:-translate-y-1
                 ${plan.featured
                   ? 'border-[1.5px] border-[#CCFF33] bg-gradient-to-br from-[#161616] to-[#1a1f10] shadow-[0_0_60px_rgba(204,255,51,0.08)]'
                   : 'border border-[#2a2a2a] bg-[#161616]'
                 }`}
             >
               {/* Badge */}
-              <span className={`w-fit text-[10px] font-bold tracking-[2px] uppercase px-3 py-1 rounded-full inline-block mb-5 ${plan.badgeStyle}`}>
+              <span className={`w-fit text-[9px] font-bold tracking-[2px] uppercase px-3 py-1 rounded-full inline-block whitespace-nowrap mb-5 ${plan.badgeStyle}`}>
                 {plan.badge}
               </span>
 
@@ -122,6 +122,7 @@ export default function Pricing() {
               </a>
             </div>
           ))}
+          <div className="w-2 flex-shrink-0 md:hidden" />
         </div>
       </ScrollReveal>
     </section>

@@ -35,12 +35,13 @@ const CARD_STACK_STEP = 20  // px adicional por card
 export default function Features() {
   return (
     <section id="funcionalidades" className="relative">
-      <div className="max-w-[1200px] mx-auto px-10">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-10">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
 
           {/* ── LEFT: Sticky label + título + subtítulo ── */}
-          <div className="lg:w-[38%] lg:sticky lg:top-24 py-24 flex-shrink-0">
-            <SectionLabel align="left">FUNCIONALIDADES</SectionLabel>
+          <div className="lg:w-[38%] lg:sticky lg:top-24 pt-16 pb-2 lg:py-24 flex-shrink-0 text-center lg:text-left">
+            <div className="lg:hidden"><SectionLabel align="center">FUNCIONALIDADES</SectionLabel></div>
+            <div className="hidden lg:block"><SectionLabel align="left">FUNCIONALIDADES</SectionLabel></div>
             <h2
               className="font-display font-black uppercase text-white leading-[1.05] mt-1 mb-6"
               style={{ fontSize: 'clamp(36px, 4vw, 52px)' }}
@@ -54,7 +55,7 @@ export default function Features() {
           </div>
 
           {/* ── RIGHT: Stacking sticky cards ── */}
-          <div className="lg:w-[62%] flex flex-col pt-6 lg:pt-24 pb-32">
+          <div className="lg:w-[62%] flex flex-col pt-4 lg:pt-24 pb-32">
             {FEATURES.map((f, i) => (
               <div
                 key={f.tag}

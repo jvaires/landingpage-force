@@ -17,7 +17,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#CCFF33]">
       {/* Main content */}
-      <div className="max-w-[1200px] mx-auto px-10 pt-14 pb-12 flex flex-col md:flex-row gap-10 md:gap-20 items-start">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-10 pt-14 pb-12 flex flex-col md:flex-row gap-10 md:gap-20 items-start">
         {/* Brand */}
         <div className="flex-shrink-0 min-w-[160px]">
           <div className="flex items-center gap-2 mb-2">
@@ -60,7 +60,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-[#0a0a0a]/15 max-w-[1200px] mx-auto px-10 py-5 flex justify-center">
+      <div className="border-t border-[#0a0a0a]/15 max-w-[1200px] mx-auto px-4 md:px-10 py-5 flex justify-center">
         <p className="text-[12px] text-[#0a0a0a]/50">
           © 2026 Force. Todos os direitos reservados.
         </p>

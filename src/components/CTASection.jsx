@@ -12,7 +12,7 @@ export default function CTASection() {
         }}
       />
 
-      <div className="max-w-[680px] mx-auto px-10 relative z-10">
+      <div className="max-w-[680px] mx-auto px-4 md:px-10 relative z-10">
         <SectionLabel>PRONTO PARA COMEÇAR</SectionLabel>
 
         <h2

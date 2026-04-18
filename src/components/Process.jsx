@@ -9,7 +9,7 @@ const IconRetain = ({ className }) => <CheckCircle weight="regular" className={c
 export default function Process() {
   return (
     <section className="py-24">
-      <ScrollReveal className="max-w-[1200px] mx-auto px-10">
+      <ScrollReveal className="max-w-[1200px] mx-auto px-4 md:px-10">
 
         {/* ── Header ── */}
         <div className="text-center mb-14">
@@ -57,7 +57,7 @@ export default function Process() {
           <div className="flex flex-col gap-4">
 
             {/* Linha superior: Cards 03 e 04 lado a lado */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               
               {/* Card 03 */}
               <div className="relative overflow-hidden rounded-2xl border border-[#2a2a2a] bg-[#0f0f0f] hover:border-[#CCFF33]/25 transition-colors duration-300 flex flex-col justify-between p-8 text-center min-h-[240px]">

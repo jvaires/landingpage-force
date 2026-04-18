@@ -59,7 +59,7 @@ function KPICard({ numValue, suffix = '', prefix = '', desc }) {
 export default function Metrics() {
   return (
     <section className="py-20 relative z-20">
-      <div className="max-w-[1200px] mx-auto px-6 lg:px-10">
+      <div className="max-w-[1200px] mx-auto px-4 md:px-10">
         
         {/* Bloco verde sólido com os KPIs */}
         <div className="bg-[#CCFF33] rounded-lg shadow-[0_20px_50px_rgba(204,255,51,0.15)] relative overflow-hidden">

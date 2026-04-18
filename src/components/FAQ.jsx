@@ -63,14 +63,14 @@ function FAQItem({ q, a }) {
 export default function FAQ() {
   return (
     <section id="faq" className="py-24 text-center">
-      <div className="max-w-[720px] mx-auto px-10">
+      <div className="max-w-[860px] mx-auto px-4 md:px-10">
         <SectionLabel>DÚVIDAS</SectionLabel>
         <h2 className="font-display font-black uppercase text-white leading-[1.05] mb-10"
-            style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}>
+            style={{ fontSize: 'clamp(32px, 4.5vw, 48px)' }}>
           PERGUNTAS QUE <span className="text-[#CCFF33]">TODO GESTOR</span> FAZ<br />ANTES DE ASSINAR.
         </h2>
 
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col gap-1 max-w-[720px] mx-auto">
           {FAQS.map((faq) => (
             <FAQItem key={faq.q} q={faq.q} a={faq.a} />
           ))}

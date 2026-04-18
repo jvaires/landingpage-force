@@ -23,7 +23,7 @@ const CARDS = [
 export default function PainSection() {
   return (
     <section className="py-24 text-center">
-      <ScrollReveal className="max-w-[1200px] mx-auto px-10">
+      <ScrollReveal className="max-w-[1200px] mx-auto px-4 md:px-10">
         <SectionLabel>POR QUE ACADEMIAS PERDEM ALUNOS</SectionLabel>
         <h2 className="font-display font-black uppercase text-white text-center leading-[1.05] mb-5"
           style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}>
@@ -34,11 +34,11 @@ export default function PainSection() {
           que não sabe se o acesso está ativo. Você gerencia tudo isso na cabeça — e ainda treina gente.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-6 -mx-4 px-6 md:grid md:grid-cols-3 md:overflow-visible md:mx-0 md:px-0 md:pb-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
           {CARDS.map((card) => (
             <div
               key={card.title}
-              className="bg-[#161616] border border-[#2a2a2a] rounded-xl p-8 text-left
+              className="w-[80vw] max-w-[320px] flex-shrink-0 snap-start md:w-auto bg-[#161616] border border-[#2a2a2a] rounded-xl p-8 text-left
                          hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.4)]
                          transition-all duration-200"
             >
@@ -47,6 +47,7 @@ export default function PainSection() {
               <p className="text-gray-400 text-sm leading-relaxed">{card.desc}</p>
             </div>
           ))}
+          <div className="w-2 flex-shrink-0 md:hidden" />
         </div>
       </ScrollReveal>
     </section>
