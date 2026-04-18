@@ -26,7 +26,7 @@ export default function Testimonials() {
         <SectionLabel>QUEM JÁ USA</SectionLabel>
         <h2 className="font-display font-black uppercase text-white leading-[1.05] mb-14"
             style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}>
-          ACADEMIAS QUE PARARAM<br />DE ADIVINHAR.
+          ACADEMIAS QUE <span className="text-[#CCFF33]">PARARAM<br />DE ADIVINHAR.</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 text-left">

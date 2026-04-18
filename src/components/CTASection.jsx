@@ -17,9 +17,9 @@ export default function CTASection() {
 
         <h2
           className="font-display font-black uppercase text-white leading-[1.0] mb-6"
-          style={{ fontSize: 'clamp(48px, 7vw, 76px)' }}
+          style={{ fontSize: 'clamp(36px, 6vw, 60px)' }}
         >
-          14 DIAS GRÁTIS.<br />SEM CARTÃO DE CRÉDITO.
+          <span className="text-[#CCFF33]">14 DIAS GRÁTIS.</span><br />SEM CARTÃO DE CRÉDITO.
         </h2>
 
         <p className="text-gray-400 text-base leading-[1.7] max-w-[520px] mx-auto mb-10">

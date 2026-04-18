@@ -18,7 +18,7 @@ export default function Process() {
             className="font-display font-black uppercase text-white leading-[1.05] mb-5"
             style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}
           >
-            TRÊS PASSOS PARA LARGAR<br />AS PLANILHAS.
+            <span className="text-[#CCFF33]">TRÊS PASSOS</span> PARA LARGAR<br />AS PLANILHAS.
           </h2>
           <p className="text-gray-400 text-[15px] leading-[1.7] max-w-[480px] mx-auto">
             Sem migração complexa. Sem treinamento longo. Você começa a usar no mesmo dia.

@@ -68,7 +68,7 @@ export default function Pricing() {
         <SectionLabel>PLANOS</SectionLabel>
         <h2 className="font-display font-black uppercase text-white leading-[1.05] mb-5"
             style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}>
-          SIMPLES DE ENTENDER.<br />JUSTO DE PAGAR.
+          <span className="text-[#CCFF33]">SIMPLES</span> DE ENTENDER.<br /><span className="text-[#CCFF33]">JUSTO</span> DE PAGAR.
         </h2>
         <p className="text-gray-400 text-[15px] leading-[1.7] max-w-[560px] mx-auto mb-14">
           Sem taxa de setup. Sem contrato anual obrigatório. Cancele quando quiser.

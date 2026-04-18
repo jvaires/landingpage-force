@@ -45,7 +45,7 @@ export default function Features() {
               className="font-display font-black uppercase text-white leading-[1.05] mt-1 mb-6"
               style={{ fontSize: 'clamp(36px, 4vw, 52px)' }}
             >
-              O SISTEMA QUE FAZ O TRABALHO SUADO.
+              O SISTEMA QUE FAZ O <span className="text-[#CCFF33]">TRABALHO SUADO.</span>
             </h2>
             <p className="text-gray-400 text-[15px] leading-[1.7]">
               O Forgee foi construído para academias que querem crescer sem afundar em processos.

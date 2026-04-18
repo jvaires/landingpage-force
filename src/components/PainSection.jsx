@@ -27,7 +27,7 @@ export default function PainSection() {
         <SectionLabel>POR QUE ACADEMIAS PERDEM ALUNOS</SectionLabel>
         <h2 className="font-display font-black uppercase text-white text-center leading-[1.05] mb-5"
           style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}>
-          A ACADEMIA CHEIA NÃO GARANTE<br />O MÊS SEGUINTE.
+          A ACADEMIA CHEIA <span className="text-[#CCFF33]">NÃO GARANTE</span><br />O MÊS SEGUINTE.
         </h2>
         <p className="text-gray-400 text-[15px] leading-[1.7] max-w-[670px] mx-auto mb-14">
           Aluno que some silenciosamente. Mensalidade que vence e ninguém avisa. Recepção

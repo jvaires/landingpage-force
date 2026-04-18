@@ -67,7 +67,7 @@ export default function FAQ() {
         <SectionLabel>DÚVIDAS</SectionLabel>
         <h2 className="font-display font-black uppercase text-white leading-[1.05] mb-10"
             style={{ fontSize: 'clamp(36px, 5vw, 58px)' }}>
-          PERGUNTAS QUE TODO GESTOR FAZ<br />ANTES DE ASSINAR.
+          PERGUNTAS QUE <span className="text-[#CCFF33]">TODO GESTOR</span> FAZ<br />ANTES DE ASSINAR.
         </h2>
 
         <div className="flex flex-col gap-1">
